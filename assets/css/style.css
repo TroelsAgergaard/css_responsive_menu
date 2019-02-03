@@ -66,6 +66,7 @@ ul > li {
     }
 }
 
+/* Insert CocaCola before the content of each li */
 @media screen and (max-width: 767px){
 
     ul > li:before {
