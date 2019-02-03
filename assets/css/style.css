@@ -1,15 +1,15 @@
 body {
     margin: 0;
     font-family: 'Verdana', sans-serif;
+    color: gray;
 }
 
 .responsive {
     max-width: 100%;
-    height: auto;
+    max-height: 90px;
 }
 
 .ellipsis {
-    margin: 0 10px 0 0;
     font-size: x-large;
 }
 
@@ -19,7 +19,9 @@ nav {
     grid-template-columns: 1fr 1.5fr;
     grid-template-rows: 100px;
     min-height: 100px;
-    background-color: cadetblue;
+    padding: 0 10px;
+    border-top: 3px solid gray;
+    background-color: black;
 }
 
 label {
@@ -32,17 +34,33 @@ input[type="checkbox"]{
     display: none;
 }
 
-input[type="checkbox"]:checked ~ .menu{
+input[type="checkbox"]:checked ~ ul{
     display: block;
 }
 
 /* Hide desktop menu by default */
-.menu {
+ul {
     display: none;
     list-style: none;
 }
 
-ul.menu > li {
+ul > li {
     font-size: x-large;
     padding: 10px;
+}
+
+/* add media query for desktop support */ 
+@media screen and (min-width: 768px){
+    label {
+        display: none;
+    }
+
+    ul {
+        display: flex;
+        justify-content: flex-end;;
+    }
+
+    ul > li {
+        font-size: large;
+    }
 }
