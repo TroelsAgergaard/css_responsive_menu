@@ -71,6 +71,7 @@ ul > li {
 
     ul > li:before {
         content: "CocaCola\00a0";
+        color: red;
     }
 
 }
