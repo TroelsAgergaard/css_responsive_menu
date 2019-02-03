@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    font-family: 'Verdana', sans-serif;
+}
+
+.responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.ellipsis {
+    margin: 0 10px 0 0;
+    font-size: x-large;
+}
+
+nav {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 100px;
+    min-height: 100px;
+    background-color: cadetblue;
+}
+
+label {
+    font-size: x-large; 
+    justify-self: end;
+}
+
+/* hide checkbox */ 
+input[type="checkbox"]{
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ .menu{
+    display: block;
+}
+
+/* Hide desktop menu by default */
+.menu {
+    display: none;
+    list-style: none;
+}
+
+ul.menu > li {
+    font-size: x-large;
+    padding: 10px;
+}
