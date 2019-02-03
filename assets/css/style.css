@@ -61,6 +61,7 @@ ul > li {
         justify-content: flex-end;;
     }
 
+    /* Selects all <li> elements where the parent is a <ul> element */
     ul > li {
         font-size: large;
     }
@@ -69,6 +70,7 @@ ul > li {
 /* Insert CocaCola before the content of each li */
 @media screen and (max-width: 767px){
 
+    /* Selects all <li> elements where the parent is a <ul> element */
     ul > li:before {
         content: "CocaCola\00a0";
         color: red;
