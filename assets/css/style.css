@@ -65,3 +65,11 @@ ul > li {
         font-size: large;
     }
 }
+
+@media screen and (max-width: 767px){
+
+    ul > li:before {
+        content: "CocaCola\00a0";
+    }
+
+}
